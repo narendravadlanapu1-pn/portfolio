@@ -1,0 +1,12 @@
+.page-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}

@@ -1,0 +1,91 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fc;
+  color: #333;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2c3e50;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.navbar ul li a:hover {
+  background: #3498db;
+  color: #fff;
+  border-color: #3498db;
+}
+
+/* Active Tab */
+.navbar ul li a.active {
+  background: #3498db;
+  color: #fff;
+  border-color: #3498db;
+}
+
+/* Page Section */
+.page-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
