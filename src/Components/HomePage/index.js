@@ -1,55 +1,82 @@
-import './index.css'
+import "./index.css";
 
 const HomePage = () => (
   <div className="homepage">
-    {/* Hero Section */}
-    <h2>Welcome to My Portfolio 🚀</h2>
-    <p>Explore my Static, Dynamic, and Full Stack projects.  
-       I’m passionate about building modern, user-friendly, and efficient applications.</p>
+    {/* Hero / Intro Section */}
+    <section className="hero-section">
+      <div className="hero-image">
+        <img
+          src="https://res.cloudinary.com/dcl6z3nux/image/upload/v1762794999/Profoilo_ikfvwe.jpg"
+          alt="profile"
+          className="profile-img"
+        />
+      </div>
 
-    {/* About Me */}
-    <section className="about-section">
-      <h3>👋 About Me</h3>
-      <p>
-        Hi, I'm [Your Name], a web developer who loves turning ideas into interactive
-        digital experiences. I specialize in frontend, backend, and full stack projects
-        using technologies like <strong>React, Node.js, Express, MySQL, and Python</strong>.
+      <div className="hero-content">
+        <h1 className="title">Welcome to My Portfolio 🚀</h1>
+        <p className="descripition">
+          Hi, I'm <span className="name">Narendra</span>, a passionate Full Stack Developer who loves
+          building interactive and high-performance web applications.
+        </p>
+        <p className="descripition">
+          Explore my <strong>Static</strong>, <strong>Dynamic</strong>, and <strong>Full Stack</strong> projects.  
+          I focus on creating clean, modern, and user-friendly experiences.
+        </p>
+      </div>
+    </section>
+
+    {/* About Section */}
+    <section className="card-section">
+      <h3 className="about">👋 About Me</h3>
+      <p className="descripition">
+       I’m Narendra, a Full Stack Developer with a solid foundation in <strong>JavaScript, React, Node.js, Express, and databases like MySQL & MongoDB</strong> . I love turning ideas into functional, user-friendly applications. I completed my graduation in <strong>2025,</strong> and since then, I have been continuously learning and building projects that improve both my technical and creative skills.
       </p>
     </section>
 
-    {/* Skills */}
-    <section className="skills-section">
-      <h3>🛠️ Skills</h3>
-      <ul>
-        <li>Frontend: HTML, CSS, JavaScript, React</li>
-        <li>Backend: Node.js, Express.js</li>
-        <li>Database: MySQL, MongoDB</li>
-        <li>Other: Git, GitHub, REST APIs</li>
+    {/* Skills Section */}
+    <section className="card-section">
+      <h3 className="skills"> Skills</h3>
+      <ul className="skills-list">
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js</li>
+        <li><strong>Backend:</strong> Node.js, Express.js,Python</li>
+        <li><strong>Database:</strong> MySQL, MongoDB,</li>
+        <li><strong>Other:</strong> Git, GitHub, REST APIs</li>
       </ul>
     </section>
 
-    {/* Projects Overview */}
-    <section className="projects-section">
-      <h3>📂 Project Categories</h3>
-      <p>Check out my work organized into three categories:</p>
-      <ul>
-        <li><strong>Static Projects:</strong> Clean and responsive static websites</li>
-        <li><strong>Dynamic Projects:</strong> Interactive apps with APIs and state management</li>
-        <li><strong>Full Stack Projects:</strong> End-to-end applications with backend & frontend</li>
+    {/* Projects Section */}
+    <section className="card-section">
+      <h3 className="projects"> Project Categories</h3>
+      <ul className="project-list">
+        <li><strong>Static Projects:</strong> Responsive and elegant websites</li>
+        <li><strong>Dynamic Projects:</strong> Interactive apps with real-time data</li>
+        <li><strong>Full Stack Projects:</strong> End-to-end web apps with backend integration</li>
       </ul>
     </section>
 
     {/* Contact Section */}
-    <section className="contact-section">
-      <h3>📬 Get In Touch</h3>
-      <p>If you’d like to collaborate or have opportunities, feel free to connect:</p>
+    <section className="card-section contact-section">
+      <h3 className="heading">📬 Get In Touch</h3>
+      <p className="para">Let’s collaborate or discuss opportunities!</p>
       <p>
-        📧 Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br />
-        💼 LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">linkedin.com/in/yourprofile</a><br />
-        🌐 GitHub: <a href="https://github.com/yourgithub" target="_blank" rel="noreferrer">github.com/yourgithub</a>
+         <a href="vadlnapunarendra9@gmail.com">Narendra</a><br />
+         <a
+          href="https://www.linkedin.com/in/narendra-vadlanapu-42859534a"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn Profile
+        </a><br />
+         <a
+          href="https://github.com/narendravadlanapu1-pn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub Profile
+        </a>
       </p>
     </section>
   </div>
-)
+);
 
-export default HomePage
+export default HomePage;

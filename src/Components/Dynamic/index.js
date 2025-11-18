@@ -53,15 +53,16 @@ const projects = [
 
 const Dynamic = () => (
   <div className="page">
-    <h2>Dynamic Projects</h2>
-    <p>Here are some dynamic projects I’ve built using JavaScript and APIs.</p>
-
+    <h2 className='title'>Dynamic Projects</h2>
+   
+    <p className='para'>Here are some dynamic projects I’ve built using JavaScript and APIs.</p>
+ <hr className='line'/>
     <div className="project-grid">
       {projects.map((project, index) => (
         <div className="project-card" key={index}>
           <img src={project.image} alt={project.name} className="project-img" />
-          <h3>{project.name}</h3>
-          <p>{project.description}</p>
+          <h3 className='heading'>{project.name}</h3>
+          <p className='descripitions'>{project.description}</p>
           <a 
             href={project.url} 
             target="_blank" 
